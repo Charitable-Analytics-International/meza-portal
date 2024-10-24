@@ -1,0 +1,11 @@
+{
+    "name": "meza-database",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "pg": "^8.7.1",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.14.0"
+    },
+    "type": "module"
+}
