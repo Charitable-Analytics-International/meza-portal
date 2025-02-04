@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic -->
+<meta charset="UTF-8" />
+<meta name='viewport' content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<title>CAI Meza</title>
+
+<!-- Include your CSS -->
+<link rel="stylesheet" href="./styles.css" />
+
+<!-- External Libraries -->
+<script async src="/assets/libs/opencv.js"></script>
+<script async src="/assets/libs/d3.js"></script>
+<script async src="/assets/libs/sweetalert.js"></script>
+
+</head>
+<body>
+
+    <!-- The main container that was in Svelte -->
+    <!-- We will show/hide parts of it in JS once "ready" is true, etc. -->
+
+    <!-- Labels container (colors) -->
+    <div id="labels-container" style="display: none;">
+        <p style="color: #aaa">Being Processed</p>
+        <p style="color: #0b75c1">Approved</p>
+        <p style="color: #f00">Rejected</p>
+        <p style="color: #ff9900">Review</p>
+    </div>
+
+    <!-- Filter by branch -->
+    <select id="filter-branch" style="display: none;">
+        <!-- JS will populate this with branches and an <option>All Branches</option> -->
+    </select>
+
+    <!-- Main image gallery -->
+    <div id="imageGallery" style="display: none;">
+        <!-- JS will dynamically populate images here -->
+    </div>
+
+    <!-- Download button -->
+    <button id="download-button" style="display: none;">
+        <img alt="download" src="/assets/icons/download.png" width="60px" height="60px">
+    </button>
+
+    <!-- Image Editor (the popup/aside) -->
+    <aside id="image_box" style="display: none;">
+        <button class="lightbutton" id="close" title="Close">
+        <img alt="Close" src="/assets/icons/close.svg">
+        </button>
+        <section>
+        <div class="left" id="image_box_left">
+            <!-- The left panel with status, review buttons, etc. 
+                (populated by JS once an image is loaded) -->
+        </div>
+        <div class="right">
+            <div id="canvas-container">
+            <canvas id="img-canvas"></canvas>
+            <canvas id="overlay-canvas"></canvas>
+            <canvas id="sketch-canvas"></canvas>
+            <canvas id="value-canvas"></canvas>
+            <svg id="svgbox"></svg>
+            </div>
+        </div>
+        </section>
+    </aside>
+
+    <!-- Scripts -->
+    <script src="./scripts.js" type="module"></script>
+
+</body>
+</html>

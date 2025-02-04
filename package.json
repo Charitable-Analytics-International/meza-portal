@@ -1,0 +1,31 @@
+{
+    "name": "meza-portal",
+    "version": "1.0.0",
+    "description": "API and frontend for image uploads and accessing digitized data.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Charitable-Analytics-International/meza-portal.git"
+    },
+    "author": "Jean-Romain Roy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Charitable-Analytics-International/meza-portal/issues"
+    },
+    "homepage": "https://github.com/Charitable-Analytics-International/meza-portal#readme",
+    "workspaces": [
+        "meza-api-authentication",
+        "meza-api-files",
+        "meza-api-gatekeeper",
+        "meza-api-project",
+        "meza-database",
+        "meza-imageprocessor",
+        "meza-libraries"
+    ],
+    "type": "module"
+}
+
+

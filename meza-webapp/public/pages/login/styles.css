@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding: 48px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-container p {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.login-container input {
+    font-size: 1rem;  /* adjust as needed */
+    padding: 0.4em;
+    margin-bottom: 48px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    max-width: 300px;  /* or any width you prefer */
+}
+
+#btn-signin {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#error-msg {
+    margin-top: 16px;
+    color: red;
+    font-style: italic;
+}

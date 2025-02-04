@@ -1,0 +1,13 @@
+config.sh
+.DS_Store
+.env
+*.log
+bundle.*
+node_modules/
+package-lock.json
+.env.bak
+__pycache__/
+build/
+dist/
+table_templates.json
+outputs/

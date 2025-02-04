@@ -1,0 +1,15 @@
+{
+    "name": "meza-libraries",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@capacitor-community/http": "^1.4.1",
+        "bcryptjs": "^2.4.3",
+        "fflate": "^0.8.0",
+        "node-fetch": "^3.0.0",
+        "sharp": "^0.33.1",
+        "uuid": "^8.3.2",
+        "winston": "^3.3.3"
+    },
+    "type": "module"
+}

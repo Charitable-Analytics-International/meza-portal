@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# app
+ABSOLUTE_PATH='/home/ubuntu/meza-portal'
+
+# server
+#   note: escape special characters with a  '\' in front
+#   e.g. https:\/\/nascopmeza.nascop.org
+SERVER='http:\/\/localhost:8080'
+
+# db
+DB_PORT='5432'
+DB_HOST='localhost'
+DB_NAME='meza'
+DB_USERNAME='postgres'
+DB_PASSWORD=''
+
+# storage
+#   note: escape special characters with a  '\' in front
+LOCAL_DIRECTORY='\/home\/ubuntu\/images\/'

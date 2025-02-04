@@ -1,0 +1,438 @@
+:root {
+    --main-color: #007bff;
+    --main-color-dark: #0056b3;
+    --main-color-light: #4d94ff;
+    --main-color-very-light: #cce5ff;
+    --white: #ffffff;
+    --white-dark: #f8f9fa;
+    --white-very-dark: #e9ecef;
+    --black-light: #6c757d;
+    --font-size-very-large: 1.5rem;
+    --font-size-large: 1.25rem;
+    --font-size-medium: 1rem;
+    --font-size-small: 0.875rem;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--white-dark);
+    color: #333;
+}
+
+/************************************************************
+* Global Button Styles
+************************************************************/
+button {
+    background-color: var(--main-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: 2.5rem;
+    padding: 0 0.8rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
+    white-space: nowrap;
+    line-height: 16px;
+}
+
+button:hover {
+    background-color: var(--main-color-dark);
+}
+
+/************************************************************
+* Light Button Variant
+************************************************************/
+.lightbutton {
+    background-color: var(--white-dark);
+    border: 1px solid var(--black-light);
+    outline: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    float: right;
+}
+
+.lightbutton img {
+    height: 12px;
+    width: 12px;
+}
+
+.lightbutton:hover {
+    background-color: var(--white-very-dark);
+}
+
+/************************************************************
+* Navbar / Header
+************************************************************/
+#navbar {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    float: left;
+    margin: 0;
+    margin-left: 24px;
+    padding: 0;
+    font-size: var(--font-size-very-large);
+    font-weight: var(--font-weight-bold);
+    color: white;
+}
+
+#version {
+    float: left;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
+    color: white;
+}
+
+#container-button {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+/************************************************************
+* Main Layout
+************************************************************/
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 64px; /* Reserve space for navbar */
+    height: calc(100% - 64px);
+}
+
+/************************************************************
+* Filters Container
+************************************************************/
+#filters-container {
+    position: fixed;
+    z-index: 2;
+    top: 64px;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid #ccc;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+#filters-container div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin: 4px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#filters-container div:hover {
+    background-color: #ccc !important;
+}
+
+.activated {
+    background-color: #eee !important;
+}
+
+/************************************************************
+* Labels Container
+************************************************************/
+#labels-container {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-top: 0.5px solid #ccc;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+#labels-container p {
+    padding: 6px 16px;
+    font-size: small;
+    margin: 0;
+}
+
+/************************************************************
+* Image Gallery
+************************************************************/
+#imageGallery {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+/************************************************************
+* Vertical Menu (Generic)
+************************************************************/
+.vertical-menu-entry {
+    background-color: #eee; /* Grey background color */
+    color: black;           /* Black text color */
+    display: block;         /* Make the links appear below each other */
+    padding: 8px;           /* Add some padding */
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;  /* Remove underline from links */
+}
+
+.vertical-menu-entry:hover {
+    background-color: #ccc;
+}
+
+/************************************************************
+* Left Panel / Actions
+************************************************************/
+#actions-select {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#actions-select button {
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+/************************************************************
+* Image Box (Popup)
+************************************************************/
+#image_box {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border: 1px solid #999;
+    background-color: #fff;
+    z-index: 4;
+}
+
+#image_box section {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+    display: flex;
+    overflow: hidden;
+}
+
+#image_box .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 28vw;
+    padding-right: 32px;
+    border-right: 1px solid black;
+    overflow-y: scroll;
+}
+
+#image_box .right {
+    position: absolute;
+    top: 32px;
+    left: 32vw;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+#image_box #canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#image_box canvas {
+    position: absolute;
+}
+
+#image_box h1 {
+    text-align: left;
+    font-size: 28px;
+    margin: 0 0 32px 0;
+    padding: 0;
+    color: #333;
+}
+
+#image_box h2 {
+    text-align: left;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    color: #333;
+}
+
+#image_box h3 {
+    text-align: left;
+    font-size: 18px;
+    margin: 0 0 16px 0;
+    padding: 0;
+    color: #5f5f5f;
+}
+
+#image_box .vertical-menu {
+    width: 100%;
+    max-height: 20vh;
+    overflow-y: scroll;
+    border: 1px solid black;
+    background-color: #eee;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/************************************************************
+* SVG Box Overlay
+************************************************************/
+#svgbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    /* The circles themselves can use pointer-events overrides
+    to be draggable, if needed */
+}
+
+/************************************************************
+* Individual Image Container + Hover Effects
+************************************************************/
+.imageContainer {
+    flex-basis: 30%;
+    margin-bottom: 15px;
+    border: 4px solid #333;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    cursor: pointer;
+}
+
+.imageContainer:hover {
+    border: 4px solid #999;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.imageContainer canvas {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageContainer .imageCaption {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 2px 5px;
+}
+
+.imageContainer .imageCaption p {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+}
+
+.imageContainer .rotate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.imageContainer .reject {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/************************************************************
+* Sweet alert global variables
+************************************************************/
+.swal-footer{
+    text-align: center;
+}
+.swal-button--cancel{
+    color: white;
+}
+.swal-button{
+    background-color: var(--main-color);
+    color: white;
+}
+.swal-button--danger{
+    background-color: var(--red);
+    color: white;
+}
+.swal-button:not([disabled]):hover{
+    background-color: var(--main-color-dark);
+}
+.swal-button--cancel:not([disabled]):hover{
+    background-color: var(--main-color-dark);
+}
+.swal-button--danger:not([disabled]):hover{
+    background-color: var(--red-dark);
+}
+.swal-text{
+    text-align: center;
+}

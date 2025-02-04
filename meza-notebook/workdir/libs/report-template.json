@@ -1,0 +1,115 @@
+{
+    "3.1 Enrolment in Care default": {
+        "Enrolled_<1       HV03-001": null,
+        "Enrolled_1-9       HV03-002": null,
+        "Enrolled_10-14(M)         HV03-003": null,
+        "Enrolled_10-14  (F)         HV03-004": null,
+        "Enrolled_15-19(M)         HV03-005": null,
+        "Enrolled_15-19  (F)         HV03-006": null,
+        "Enrolled_20-24(M)         HV03-007": null,
+        "Enrolled_20-24  (F)         HV03-008": null,
+        "Enrolled_25+(M)         HV03-009": null,
+        "Enrolled_25+  (F)         HV03-010": null,
+        "Enrolled_Total    (Sum HV03-001 to HV03-010)       HV03-011": null,
+        "Enrolled in Care_KeyPop       HV03-012": null
+    },
+    "3.2 Current On Pre-ART default": {
+        "In Pre ART_0-14       HV03-013": null,
+        "In Pre ART_15+       HV03-014": null,
+        "In Pre ART_Total(HV03-13+HV03-14       HV03-015": null
+    },
+    "3.3 Starting ART default": {
+        "Start ART_<1       HV03-016": null,
+        "Start ART_1-9       HV03-017": null,
+        "Start ART_10-14(M)         HV03-018": null,
+        "Start ART_10-14  (F)         HV03-019": null,
+        "Start ART_15-19(M)         HV03-020": null,
+        "Start ART_15-19  (F)         HV03-021": null,
+        "Start ART_20-24(M)         HV03-022": null,
+        "Start ART_20-24  (F)         HV03-023": null,
+        "Start ART_25+(M)         HV03-024": null,
+        "Start ART_25+  (F)         HV03-025": null,
+        "Start ART_Total           (Sum HV03-018 to HV03-029)        HV03-026": null,
+        "Start ART_KeyPop       HV03-027": null
+    },
+    "3.4 Current on ART ([ALL]) default": {
+        "On ART_<1       HV03-028": null,
+        "On ART_1-9       HV03-029": null,
+        "On ART_10-14(M)         HV03-030": null,
+        "On ART_10-14  (F)         HV03-031": null,
+        "On ART_15-19(M)         HV03-032": null,
+        "On ART_15-19  (F)         HV03-033": null,
+        "On ART_20-24(M)         HV03-034": null,
+        "On ART_20-24  (F)         HV03-035": null,
+        "On ART_25+(M)         HV03-036": null,
+        "On ART_25+  (F)         HV03-037": null,
+        "On ART_Total    (Sum HV03-034 to HV03-043)        HV03-038": null,
+        "On ART_KeyPop   (HIV3-038 plus HIV3-050)       HV03-039": null
+    },
+    "3.5 Retention On ART default": {
+        "On ART _12mths       HV03-040": null,
+        "Net Cohort_12mths        HV03-041": null,
+        "Viral load <1000_12mths       HV03-042": null,
+        "Viral load result_12mths       HV03-043": null
+    },
+    "3.6 On CTX/Dapsone default": {
+        "On CTX/DDS_<1       HV03-044": null,
+        "On CTX/DDS_1-9       HV03-045": null,
+        "On CTX/DDS_10-14       HV03-046": null,
+        "On CTX/DDS_15-19       HV03-047": null,
+        "On CTX/DDS_20-24        HV03-048": null,
+        "On CTX/DDS_25+       HV03-049": null,
+        "On CTX/DDS_Total       HV03-050": null
+    },
+    "3.7 TB Screening & Presumed TB default": {
+        "Screen for TB_<1        HV03-051": null,
+        "Screen for TB _1-9        HV03-052": null,
+        "Screen for TB _10-14        HV03-053": null,
+        "Screen for TB _15-19        HV03-054": null,
+        "Screen for TB _20-24        HV03-055": null,
+        "Screen for TB _25+        HV03-056": null,
+        "Screen for TB_Total       HV03-057": null,
+        "Presumed TB_Total       HV03-058": null
+    },
+    "3.8 Starting IPT default": {
+        "Start IPT_<1        HV03-059": null,
+        "Start IPT _1-9        HV03-060": null,
+        "Start IPT _10-14        HV03-061": null,
+        "Start IPT _15-19        HV03-062": null,
+        "Start IPT _20-24        HV03-063": null,
+        "Start IPT _25+        HV03-064": null,
+        "Start IPT_Total       HV03-065": null,
+        "Completed IPT_12months       HV03-066": null
+    },
+    "3.9 Nutrition and HIV default": {
+        "Nutrition Assess_<15       HV03-067": null,
+        "Nutrition Assess _15+       HV03-068": null,
+        "Nutrition Assess_Total       HV03-069": null,
+        "Malnourished_<15       HV03-070": null,
+        "Malnourished_15+       HV03-071": null,
+        "Malnourished_Total       HV03-072": null,
+        "FBP Provided_<15       HV03-073": null,
+        "FBP Provided_15+       HV03-074": null,
+        "FBP Provided_Total       HV03-075": null
+    },
+    "3.10 HIV in TB clinic default": {
+        "TB cases _New       HV03-076": null,
+        "TB Cases _Known Positive(KPs)       HV03-077": null,
+        "TB Cases Tested_HIV       HV03-078": null,
+        "TB_Known status       HV03-079": null,
+        "TB_New HIV Positive       HV03-080": null,
+        "TB Cases_Total HIV+ (HV03-077+080)       HV03-081": null,
+        "TB_already on HAART       HV03-082": null,
+        "TB_start_HAART       HV03-083": null,
+        "TB_Total on HAART(HV03-082+083)       HV03-084": null
+    },
+    "3.11 Community Dispensing of ARVs default": {
+        "Community ART current(M)         HV03-085": null,
+        "Community ART current  (F)         HV03-086": null
+    },
+    "3.12 Family Planning & CaCx Screening in HIV CCC default": {
+        "Screen CaCx_New F18+       HV03-087": null,
+        "Clinical visits_F18+       HV03-088": null,
+        "On modern FP _F18+       HV03-089": null
+    }
+}
